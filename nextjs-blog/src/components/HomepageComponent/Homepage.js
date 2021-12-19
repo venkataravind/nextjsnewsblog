@@ -74,7 +74,7 @@ function Homepage() {
     return (
         <div style={mainblock}>
             <h1>Welcome to NEWS Blog</h1>
-            <input style={inputStyle} onChange={handleInput} type="text" placeholder="Type Publisher to search"></input>
+            <input style={inputStyle} onChange={handleInput} type="text" placeholder="Type keyword to search"></input>
             {
                 data.filter((dat) => {
                     if ((input === '') || (dat.TITLE.toLowerCase().includes(input.toLowerCase()))) {
