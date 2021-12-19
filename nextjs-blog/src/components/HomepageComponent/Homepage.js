@@ -8,6 +8,7 @@ function Homepage() {
         fetchDatas();
     }, []);
 
+    // Styles
     const mainblock = {
         background: '#ececed',
         position: 'relative',
@@ -61,6 +62,7 @@ function Homepage() {
         position: 'relative',
     }
 
+     // To fetch the values from API
     const fetchDatas = () => {
         fetch('https://s3-ap-southeast-1.amazonaws.com/he-public-data/newsf6e2440.json').then(response => response.json()).then(datas => setData(datas))
     }
